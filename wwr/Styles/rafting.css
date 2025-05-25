@@ -1,24 +1,97 @@
 
 :root {
-  --black-olive: #1f271bff;
-  --indigo-dye: #0b4f6cff;
-  --lapis-lazuli: #145c9eff;
-  --dun: #cbb9a8ff;
-  --pale-dogwood: #dcc7beff; 
-  --heading-font: "rubrik dirt";
-  --body-front: "rubrik"
+  --primary-color: #1f271bff; /*black-olive*/
+  --secondary-color: #0b4f6cff; /*indigo-dye*/
+  --accent1-color: #145c9eff; /*lapis-lazuli*/
+  --accent2-color: #cbb9a8ff; /*dun*/
+  --accent3-color: #dcc7beff; /*pale-dogwood*/ 
+  --heading-font: "rubik dirt";
+  --body-front: "rubik";
   }
+  
+header {
+  background-color: var(--accent-color);
+  font-family: "rubik dirt";
+  color: var(--primary-color);
+}
+
+header img {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--heading-font);
+  color: var(a);
+  background-color: var(--accent2-color);
+}
+
+header, main, footer {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
 
 nav {
   width: fit-content;  /* or a fixed width like 600px */
-  margin: 0 auto;
+  margin: 16px auto;
+  padding: 8px auto;
 }
 
-header {
-    font-family: "rubik dirt";
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 h1 {
-    font-family: "rubik dirt";
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--primary-color);
+  color: var(--accent3-color);
+}
+
+.socialmedia a{
+  text-decoration: none;
+}
+
+.socialmedia a img{
+  width: 50px;
+  height: auto;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero2 {
+  padding: 8px;
+}
+
+.section1 {
+  position: relative;
+}
+
+.section1 img {
+  position: relative;
+}
+
+p {
+  font-family: var(--body-front);
 }
 
