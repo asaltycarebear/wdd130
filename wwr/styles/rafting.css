@@ -27,7 +27,7 @@ header img {
 
 body {
   font-family: var(--heading-font);
-  color: var(a);
+  color: var(--accent2-color);
   background-color: var(--accent2-color);
 }
 
@@ -54,7 +54,7 @@ header, main, footer {
 nav {
   width: fit-content;  /* or a fixed width like 600px */
   margin: 16px auto;
-  padding: 8px auto;
+  padding: 8px;
 }
 
 h1, h2 {
