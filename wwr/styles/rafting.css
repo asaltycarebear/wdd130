@@ -101,7 +101,7 @@ h1 {
   box-sizing: border-box;
 }
 
-p1 {
+.p1 {
   display: flex;
   justify-content: center;
   font-family: var(--body-front);
@@ -128,16 +128,17 @@ p1 {
 
 .section-1 img {
   position: relative;
+  width: 300px;
 }
 
-p2 {
+.p2 {
   display: flex;
   justify-content: center;
   font-family: var(--body-front);
   align-self: center;
 }
 
-p3 {
+.p3 {
   display: flex;
   justify-content: center;
   font-family: var(--body-front);
