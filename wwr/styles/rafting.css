@@ -36,17 +36,27 @@ header {
   color: var(--accent2-color);
   padding: 16px;
   font-family: "rubik dirt";
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: var(--accent3-color);
+  margin-bottom: 10px; 
+  width: 100%;
+  height: auto;
 }
 
 header img {
-  text-align: center;
   height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: 15%;
 }
   
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: var(--accent1-color);
+nav {
+  display: flex;
+  flex-direction: row; /* default; optional */
+  align-items: center;
+  justify-content: start; /* or center, or space-between depending on your layout */
+  gap: 15px; /* cleaner spacing between links */
 }
 
 h1, h2 {
@@ -175,21 +185,24 @@ h1 {
 footer {
   background-color: var(--primary-color);
   color: var(--accent1-color);
-  text-align: center;
   padding: 16px;
+}
+
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.socialmedia a{
-  text-decoration: none;
+.socialmedia {
+  display: flex;
+  gap: 12px;
 }
 
-.socialmedia a img{
-  width: 50px;
-  height: auto;
-  text-decoration: none;
+.socialmedia img {
+  height: 30px;
+  width: 30px;
 }
 
