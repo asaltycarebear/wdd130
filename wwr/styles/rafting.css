@@ -279,6 +279,13 @@ form button {
   padding: 1%;
 }
 
+.map {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .contact-info {
   max-width: 100%;
   width: 300px
