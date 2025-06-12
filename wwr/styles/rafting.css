@@ -34,7 +34,7 @@ header {
   justify-content: space-evenly;
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  padding: 16px;
+  padding: 2%;
   font-family: "rubik dirt";
   border-radius: 20px;
   box-sizing: border-box;
@@ -45,7 +45,7 @@ header {
 }
 
 header img {
-  height: 300px;
+  height: 200px;
   max-width: 100%;
   object-fit: contain;
   margin-left: 15%;
@@ -67,7 +67,7 @@ h1, h2 {
 nav, section, article { /*check later*/
   /* width: fit-content;  /* or a fixed width like 600px */
   margin: 16px auto;
-  padding: 8px;
+  padding: 1%;
 }
 
 .hero {
@@ -87,7 +87,7 @@ h1 {
   top: 20px;
   width: 90%;
   left: 5%;
-  padding: 16px;
+  padding: 2%;
   text-align: center;
   opacity: 0.8;
   background-color: var(--accent2-color);
@@ -120,7 +120,7 @@ h1 {
 
 .hero article img {
   float: right;
-  width: 200px;
+  width: 30%;
   margin-left: 16px;
   border-radius: 20px;
   box-shadow: 0 0 20px var(--accent1-color);
@@ -139,6 +139,10 @@ h1 {
 .section-1 img {
   position: relative;
   width: 300px;
+  box-sizing: border-box;
+  padding: 2%;
+  border-radius: 20px;
+  background-color: rgba(31, 39, 27, .9);
 }
 
 .p2 {
@@ -149,6 +153,13 @@ h1 {
 }
 
 .p3 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--body-front);
+  align-self: center;
+}
+
+.p4 {
   display: flex;
   justify-content: center;
   font-family: var(--body-front);
@@ -180,6 +191,8 @@ h1 {
   height: auto;
   box-sizing: border-box;
   border-radius: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 footer {
@@ -206,3 +219,71 @@ footer {
   width: 30px;
 }
 
+form {
+  object-fit: contain;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 5%;
+  text-align: left;
+  color: var(--accent1-color);
+  font-family: var(--body-front);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font-family: var(--body-front);
+}
+form textarea {
+  height: 100px;
+}
+form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+form .checkbox {
+  margin-top: 1rem;
+}
+form button {
+  padding: 0.5rem 1rem;
+}
+.contact-section {
+  color: var(--accent1-color);
+  width: 100%;
+  font-family: var(--body-front);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 1rem;
+  line-height: 1.6;
+}
+
+.contact-section p {
+  padding: 1%;
+}
+
+.contact-info {
+  max-width: 100%;
+  width: 300px
+}
+.map {
+  width: 300px;
+  height: 300px;
+  background-color: #e0e0e0;
+}
+.image-gallery {
+  margin: 3rem 1rem;
+  text-align: center;
+}
+.image-gallery img {
+  width: 100px;
+  margin: 0 1rem;
+}
