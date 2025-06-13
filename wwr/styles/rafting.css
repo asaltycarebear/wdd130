@@ -64,7 +64,7 @@ h1, h2 {
 }
 
 nav, section, article { /*check later*/
-  /* width: fit-content;  /* or a fixed width like 600px */
+  width: fit-content;  /* or a fixed width like 600px */
   margin: 16px auto;
   padding: 1%;
 }
