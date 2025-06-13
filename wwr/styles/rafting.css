@@ -221,7 +221,6 @@ footer {
 .page-layout {
   display: flex;
   flex-direction: column;
-  align-items: left;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
