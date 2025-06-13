@@ -35,19 +35,32 @@
                 </header>
                 <section class="form-section">
                     <form>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email Address" required>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
 
                         <p>Inquiry type:</p>
-                        <label><input type="radio" name="inquiry" value="general"> General Inquiry</label>
-                        <label><input type="radio" name="inquiry" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="inquiry" value="suggestion"> Website Suggestion</label>
+                        <label for="inquiry-general">
+                            <input type="radio" id="inquiry-general" name="inquiry" value="general">
+                            General Inquiry
+                        </label>
+                        <label for="inquiry-reservation">
+                            <input type="radio" id="inquiry-reservation" name="inquiry" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="inquiry-suggestion">
+                            <input type="radio" id="inquiry-suggestion" name="inquiry" value="suggestion">
+                            Website Suggestion
+                        </label>
 
-                        <textarea placeholder="Message us here!"></textarea>
+                        <label for="message">Message us here!</label>
+                        <textarea id="message" name="message" placeholder="Message us here!"></textarea>
 
-                        <label class="checkbox">
-                        <input type="checkbox" name="subscribe">
-                        Please subscribe me to the monthly newsletter
+                        <label for="subscribe" class="checkbox">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            Please subscribe me to the monthly newsletter
                         </label>
 
                         <button type="submit">Send</button>
