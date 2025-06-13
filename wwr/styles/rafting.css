@@ -182,8 +182,8 @@ h1 {
 
 .image-row {
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .image-row img {
@@ -219,10 +219,17 @@ footer {
   width: 30px;
 }
 
-.form section {
-  object-fit: contain;
-  box-sizing: border-box;
-  background-color: var(--accent2-color);
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-section {
+  width: 100%;
 }
 
 form {
@@ -280,8 +287,8 @@ form button {
 }
 
 .map {
-  width: 400px;
   height: auto;
+
 }
 
 .contact-info {
