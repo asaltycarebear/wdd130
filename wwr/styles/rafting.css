@@ -29,16 +29,16 @@ header, main, footer {
 }
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image + content */
   align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--primary-color);
+  gap: 2rem;
+  background-color: var(--accent3-color);
   color: var(--accent2-color);
   padding: 2%;
   font-family: "rubik dirt";
   border-radius: 20px;
   box-sizing: border-box;
-  background-color: var(--accent3-color);
   margin-bottom: 10px; 
   width: 100%;
   height: auto;
@@ -48,7 +48,7 @@ header img {
   height: 200px;
   max-width: 100%;
   object-fit: contain;
-  margin-left: 15%;
+  margin-left: 0; /* Reset left margin for better grid alignment */
 }
   
 nav {
