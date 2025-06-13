@@ -196,7 +196,7 @@ h1 {
 
 footer {
   background-color: var(--primary-color);
-  color: var(--accent1-color);
+  color: var(--secondary-color);
   padding: 16px;
   width: auto;
 }
@@ -236,7 +236,7 @@ form {
   margin: 2rem auto;
   padding: 5%;
   text-align: left;
-  color: var(--accent1-color);
+  color: var(--secondary-color);
   font-family: var(--body-front);
   box-sizing: border-box;
   background-color: var(--accent3-color);
@@ -269,7 +269,7 @@ form button {
   padding: 0.5rem 1rem;
 }
 .contact-section {
-  color: var(--accent1-color);
+  color: var(--secondary-color);
   width: 100%;
   font-family: var(--body-front);
   display: flex;
