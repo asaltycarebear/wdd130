@@ -1,23 +1,13 @@
 
 :root {
-  --primary-color: #1f271bff; /*black-olive*/
+  --primary-color: #cbb9a8ff;
   --secondary-color: #0b4f6cff; /*indigo-dye*/
   --accent1-color: #145c9eff; /*lapis-lazuli*/
-  --accent2-color: #cbb9a8ff; /*dun*/
+  --accent2-color: #1f271bff; /*dun*/ /*black-olive*/
   --accent3-color: #dcc7beff; /*pale-dogwood*/ 
   --heading-font: "rubik dirt";
   --body-front: "rubik";
   }
-  
-header {
-  background-color: var(--accent-color);
-  font-family: "rubik dirt";
-  color: var(--primary-color);
-}
-
-header img {
-  text-align: center;
-}
 
 * {
   margin: 0;
@@ -26,15 +16,57 @@ header img {
 }
 
 body {
+  padding: 5%;
   font-family: var(--heading-font);
-  color: var(--accent2-color);
-  background-color: var(--accent2-color);
+  color: var(--accent3-color);
+  background-color: var(--primary-color);
 }
 
 header, main, footer {
   width: fit-content;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image + content */
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--accent3-color);
+  color: var(--accent2-color);
+  padding: 2%;
+  font-family: "rubik dirt";
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px; 
+  width: 100%;
+  height: auto;
+}
+
+header img {
+  height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: 0; /* Reset left margin for better grid alignment */
+}
+  
+nav {
+  display: flex;
+  flex-direction: row; /* default; optional */
+  align-items: center;
+  justify-content: start; /* or center, or space-between depending on your layout */
+  gap: 15px; /* cleaner spacing between links */
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+nav, section, article { /*check later*/
+  width: fit-content;  /* or a fixed width like 600px */
+  margin: 16px auto;
+  padding: 1%;
 }
 
 .hero {
@@ -45,53 +77,228 @@ header, main, footer {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.hero2 {
-  padding: 8px;
-}
-
-nav {
-  width: fit-content;  /* or a fixed width like 600px */
-  margin: 16px auto;
-  padding: 8px;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 h1 {
   position: absolute;
   top: 20px;
-  width: 100%;
-  padding: 16px;
+  width: 90%;
+  left: 5%;
+  padding: 2%;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--primary-color);
+  opacity: 0.8;
+  background-color: var(--accent2-color);
   color: var(--accent3-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-size: 80px;
 }
 
-.socialmedia a{
-  text-decoration: none;
+.hero article {
+  position: absolute;
+  display: flex;
+  bottom: 80px;
+  color: var(--accent3-color);
+  background-color: rgba(31, 39, 27, .9);
+  padding: 16px;
+  width: 80%;
+  left: 10%;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.socialmedia a img{
-  width: 50px;
+.p1 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--body-front);
+  align-self: center;
+}
+
+.hero article img {
+  float: right;
+  width: 30%;
+  margin-left: 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--accent1-color);
+  order: 2;
+}
+
+.section-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(31, 39, 27, .9);
+}
+
+.section-1 img {
+  position: relative;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 2%;
+  border-radius: 20px;
+  background-color: rgba(31, 39, 27, .9);
+}
+
+.p2 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--body-front);
+  align-self: center;
+}
+
+.p3 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--body-front);
+  align-self: center;
+}
+
+.p4 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--body-front);
+  align-self: center;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(31, 39, 27, .9);
+}
+
+.section-2 h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.image-row img {
+  width: 220px;
   height: auto;
-  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-.section1 {
-  position: relative;
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 16px;
+  width: auto;
 }
 
-.section1 img {
-  position: relative;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-p {
+.socialmedia {
+  display: flex;
+  gap: 12px;
+}
+
+.socialmedia img {
+  height: 30px;
+  width: 30px;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-section {
+  width: 100%;
+}
+
+form {
+  object-fit: contain;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 5%;
+  text-align: left;
+  color: var(--secondary-color);
+  font-family: var(--body-front);
+  box-sizing: border-box;
+  background-color: var(--accent3-color);
+  border-radius: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
   font-family: var(--body-front);
 }
+form textarea {
+  height: 100px;
+}
+form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+form .checkbox {
+  margin-top: 1rem;
+}
+form button {
+  padding: 0.5rem 1rem;
+}
+.contact-section {
+  color: var(--secondary-color);
+  width: 100%;
+  font-family: var(--body-front);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 1rem;
+  line-height: 1.6;
+}
 
+.contact-section p {
+  padding: 1%;
+}
+
+.map {
+  height: auto;
+
+}
+
+.contact-info {
+  max-width: 100%;
+  width: 300px
+}
+
+.image-gallery {
+  margin: 3rem 1rem;
+  text-align: center;
+}
+.image-gallery img {
+  width: 100px;
+  margin: 0 1rem;
+}
