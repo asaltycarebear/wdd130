@@ -80,7 +80,7 @@ header img {
   height: 200px;
   max-width: 100%;
   object-fit: contain;
-  margin-left: 0; /* Reset left margin for better grid alignment */
+  margin-left: 60%; /* Reset left margin for better grid alignment */
 }
   
 nav {
