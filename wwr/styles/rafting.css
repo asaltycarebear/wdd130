@@ -22,7 +22,8 @@ body {
 }
 
 header, main, footer {
-  width: fit-content;
+  width: 90vw;
+  max-width: 90vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,15 +42,16 @@ header,
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .contact-header {
-  width: 64.5%;
+  width: 90vw;
   height: auto;
 }
 
 .about-header {
-  width: 100%;
+  width: 90vw;
   height: auto;
 }
 
@@ -57,7 +59,7 @@ header img {
   height: 200px;
   max-width: 100%;
   object-fit: contain;
-  margin-left: 60%;
+  margin-left: 0;
 }
 
 nav {
@@ -237,15 +239,16 @@ footer {
   flex-direction: column;
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 4rem 0 0 0; /* Top margin only */
 }
 
 .form-section {
-  width: 100%;
+  width: 90vw;
 }
 
 form {
-  width: 100%;
+  width: 70vw;
+  min-width: 400px;
   margin: 2rem auto;
   padding: 5%;
   text-align: left;

@@ -1,13 +1,12 @@
-
 :root {
   --primary-color: #cbb9a8ff;
-  --secondary-color: #0b4f6cff; /*indigo-dye*/
-  --accent1-color: #145c9eff; /*lapis-lazuli*/
-  --accent2-color: #1f271bff; /*dun*/ /*black-olive*/
-  --accent3-color: #dcc7beff; /*pale-dogwood*/ 
+  --secondary-color: #0b4f6cff;
+  --accent1-color: #145c9eff;
+  --accent2-color: #1f271bff;
+  --accent3-color: #dcc7beff;
   --heading-font: "rubik dirt";
   --body-front: "rubik";
-  }
+}
 
 * {
   margin: 0;
@@ -28,9 +27,11 @@ header, main, footer {
   text-align: center;
 }
 
-.contact-header {
+header,
+.contact-header,
+.about-header {
   display: grid;
-  grid-template-columns: auto 1fr; /* Image + content */
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 2rem;
   background-color: var(--accent3-color);
@@ -39,40 +40,16 @@ header, main, footer {
   font-family: "rubik dirt";
   border-radius: 20px;
   box-sizing: border-box;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+}
+
+.contact-header {
   width: 64.5%;
   height: auto;
 }
 
 .about-header {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Image + content */
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--accent3-color);
-  color: var(--accent2-color);
-  padding: 2%;
-  font-family: "rubik dirt";
-  border-radius: 20px;
-  box-sizing: border-box;
-  margin-bottom: 10px; 
   width: 100%;
-  height: auto;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Image + content */
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--accent3-color);
-  color: var(--accent2-color);
-  padding: 2%;
-  font-family: "rubik dirt";
-  border-radius: 20px;
-  box-sizing: border-box;
-  margin-bottom: 10px; 
-  width: fit-content;
   height: auto;
 }
 
@@ -80,23 +57,23 @@ header img {
   height: 200px;
   max-width: 100%;
   object-fit: contain;
-  margin-left: 60%; /* Reset left margin for better grid alignment */
+  margin-left: 60%;
 }
-  
+
 nav {
   display: flex;
-  flex-direction: row; /* default; optional */
+  flex-direction: row;
   align-items: center;
-  justify-content: start; /* or center, or space-between depending on your layout */
-  gap: 15px; /* cleaner spacing between links */
+  justify-content: start;
+  gap: 15px;
 }
 
 h1, h2 {
   font-family: var(--heading-font);
 }
 
-nav, section, article { /*check later*/
-  width: fit-content;  /* or a fixed width like 600px */
+nav, section, article {
+  width: fit-content;
   margin: 16px auto;
   padding: 1%;
 }
@@ -107,24 +84,23 @@ nav, section, article { /*check later*/
 
 .hero img {
   display: block;
-  width: 100%;
+  width: 90vw;
   height: auto;
-  box-sizing: border-box;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .hero h1 {
   position: absolute;
   top: 20px;
-  width: 90%;
   left: 5%;
+  width: 90%;
   padding: 2%;
   text-align: center;
   opacity: 0.8;
   background-color: var(--accent2-color);
   color: var(--accent3-color);
   border-radius: 20px;
-  box-sizing: border-box;
   letter-spacing: 2px;
   font-size: 80px;
 }
@@ -134,12 +110,20 @@ nav, section, article { /*check later*/
   display: flex;
   bottom: 80px;
   color: var(--accent3-color);
-  background-color: rgba(31, 39, 27, .9);
+  background-color: rgba(31, 39, 27, 0.9);
   padding: 16px;
   width: 80%;
   left: 10%;
   border-radius: 20px;
-  box-sizing: border-box;
+}
+
+.about-hero-article img {
+  float: right;
+  width: 30%;
+  margin-left: 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--accent1-color);
+  order: 2;
 }
 
 .contact-hero-article-img {
@@ -148,13 +132,15 @@ nav, section, article { /*check later*/
   align-items: flex-start;
   gap: 1rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .contact-hero-article-img figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px;
+  width: 30%;
+  min-width: 150px;
   margin: 0;
 }
 
@@ -174,54 +160,22 @@ nav, section, article { /*check later*/
   color: var(--accent3-color);
 }
 
-.hero article img {
-  float: right;
-  width: 30%;
-  margin-left: 16px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px var(--accent1-color);
-  order: 2;
-}
-
 .section-1 {
   position: relative;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
   border-radius: 20px;
-  background-color: rgba(31, 39, 27, .9);
+  background-color: rgba(31, 39, 27, 0.9);
 }
 
 .section-1 img {
-  position: relative;
   width: 300px;
-  box-sizing: border-box;
   padding: 2%;
   border-radius: 20px;
-  background-color: rgba(31, 39, 27, .9);
+  background-color: rgba(31, 39, 27, 0.9);
 }
 
-.p1 {
-  display: flex;
-  justify-content: center;
-  font-family: var(--body-front);
-  align-self: center;
-}
-.p2 {
-  display: flex;
-  justify-content: center;
-  font-family: var(--body-front);
-  align-self: center;
-}
-
-.p3 {
-  display: flex;
-  justify-content: center;
-  font-family: var(--body-front);
-  align-self: center;
-}
-
-.p4 {
+.p1, .p2, .p3, .p4 {
   display: flex;
   justify-content: center;
   font-family: var(--body-front);
@@ -232,9 +186,8 @@ nav, section, article { /*check later*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   border-radius: 20px;
-  background-color: rgba(31, 39, 27, .9);
+  background-color: rgba(31, 39, 27, 0.9);
 }
 
 .section-2 h2 {
@@ -251,17 +204,15 @@ nav, section, article { /*check later*/
 .image-row img {
   width: 220px;
   height: auto;
-  box-sizing: border-box;
   border-radius: 20px;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 0 3%;
 }
 
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 16px;
-  width: auto;
+  width: 100%;
 }
 
 .footer-content {
@@ -294,14 +245,12 @@ footer {
 }
 
 form {
-  object-fit: contain;
   width: 100%;
   margin: 2rem auto;
   padding: 5%;
   text-align: left;
   color: var(--secondary-color);
   font-family: var(--body-front);
-  box-sizing: border-box;
   background-color: var(--accent3-color);
   border-radius: 20px;
 }
@@ -312,28 +261,32 @@ form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  box-sizing: border-box;
   font-family: var(--body-front);
 }
+
 form textarea {
   height: 100px;
 }
+
 form label {
   display: block;
   margin: 0.5rem 0 0.25rem;
 }
+
 form input[type="radio"] {
   margin-right: 0.5rem;
 }
+
 form .checkbox {
   margin-top: 1rem;
 }
+
 form button {
   padding: 0.5rem 1rem;
 }
+
 .contact-section {
   color: var(--secondary-color);
-  width: 100%;
   font-family: var(--body-front);
   display: flex;
   justify-content: space-around;
@@ -349,18 +302,18 @@ form button {
 
 .map {
   height: auto;
-
 }
 
 .contact-info {
   max-width: 100%;
-  width: 300px
+  width: 300px;
 }
 
 .image-gallery {
   margin: 3rem 1rem;
   text-align: center;
 }
+
 .image-gallery img {
   width: 100px;
   margin: 0 1rem;
