@@ -323,13 +323,18 @@ form button {
 }
 
 .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 2rem;
+  gap: 1rem; /* Add desired spacing here */
   background-color: var(--accent3-color);
   color: var(--secondary-color);
   font-family: var(--body-front);
   border-radius: 20px;
 }
+
 
 .cta-button {
   display: inline-block;
@@ -390,4 +395,30 @@ form button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.trips-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: var(--accent3-color);
+  color: var(--secondary-color);
+  font-family: var(--body-front);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.trips-table thead {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.trips-table .alternate-row {
+  background-color: var(--primary-color);
 }
